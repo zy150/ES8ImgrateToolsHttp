@@ -1,0 +1,294 @@
+package cuc.cdnews.domain;
+
+import java.util.Arrays;
+import java.util.Date;
+import java.util.List;
+
+public class ESArticleFullBean {
+	public ESArticleFullBean() {
+
+	}
+
+	@Override
+	public String toString() {
+		return "ESArticleFullBean{" +
+				"id=" + id +
+				", title='" + title + '\'' +
+				", content='" + content + '\'' +
+				", author='" + author + '\'' +
+				", publisherId='" + publisherId + '\'' +
+				", docType='" + docType + '\'' +
+				", mediaSourceId='" + mediaSourceId + '\'' +
+				", inclusionTime=" + inclusionTime +
+				", inclusionTimeText='" + inclusionTimeText + '\'' +
+				", publishTime=" + publishTime +
+				", publishTimeText='" + publishTimeText + '\'' +
+				", publisherCountry='" + publisherCountry + '\'' +
+				", publisherType=" + publisherType +
+				", classification=" + classification +
+				", sentiment=" + sentiment +
+				", reserveAtt1='" + reserveAtt1 + '\'' +
+				", reserveAtt2=" + reserveAtt2 +
+				", abstractEN='" + abstractEN + '\'' +
+				", abstractCN='" + abstractCN + '\'' +
+				", titleCN='" + titleCN + '\'' +
+				", contentCN='" + contentCN + '\'' +
+				", articleVector=" + Arrays.toString(articleVector) +
+				", wordSeqJson=" + wordSeqJson +
+				", nerList=" + nerList +
+				", isKeyArticle=" + isKeyArticle +
+				", url='" + url + '\'' +
+				", searchScore=" + searchScore +
+				'}';
+	}
+
+	private int id;
+	private String title;
+	private String content;
+	private String author;
+	private String publisherId;
+
+	private String docType;
+	private String mediaSourceId;
+	private Date inclusionTime;
+	private String inclusionTimeText;
+	private Date publishTime;
+
+	private String publishTimeText;
+	private String publisherCountry;
+	private int publisherType;
+	private EsClassification classification;
+	private EsSentiment sentiment;
+
+	private String reserveAtt1;
+	private int reserveAtt2;
+	private String abstractEN;
+	private String abstractCN;
+	private String titleCN;
+
+	private String contentCN;
+	private Double[] articleVector;
+	private List<HotWord> wordSeqJson;
+	private NerListObj nerList;
+	private int isKeyArticle = 0;
+
+	private String url;
+	
+	private Double searchScore;
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setTitle(String title) {
+		this.title = title;
+	}
+
+	public String getTitle() {
+		return title;
+	}
+
+	public void setContent(String content) {
+		this.content = content;
+	}
+
+	public String getContent() {
+		return content;
+	}
+
+	public void setAuthor(String author) {
+		this.author = author;
+	}
+
+	public String getAuthor() {
+		return author;
+	}
+
+	public void setPublisherId(String publisherId) {
+		this.publisherId = publisherId;
+	}
+
+	public String getPublisherId() {
+		return publisherId;
+	}
+
+	public void setDocType(String docType) {
+		this.docType = docType;
+	}
+
+	public String getDocType() {
+		return docType;
+	}
+
+	public void setMediaSourceId(String mediaSourceId) {
+		this.mediaSourceId = mediaSourceId;
+	}
+
+	public String getMediaSourceId() {
+		return mediaSourceId;
+	}
+
+	public void setInclusionTime(Date inclusionTime) {
+		this.inclusionTime = inclusionTime;
+	}
+
+	public Date getInclusionTime() {
+		return inclusionTime;
+	}
+
+	public void setPublishTime(Date publishTime) {
+		this.publishTime = publishTime;
+	}
+
+	public Date getPublishTime() {
+		return publishTime;
+	}
+
+	public void setPublishTimeText(String publishTimeText) {
+		this.publishTimeText = publishTimeText;
+	}
+
+	public String getPublishTimeText() {
+		return publishTimeText;
+	}
+
+	public void setPublisherCountry(String publisherCountry) {
+		this.publisherCountry = publisherCountry;
+	}
+
+	public String getPublisherCountry() {
+		return publisherCountry;
+	}
+
+	public void setPublisherType(int publisherType) {
+		this.publisherType = publisherType;
+	}
+
+	public int getPublisherType() {
+		return publisherType;
+	}
+
+	public void setClassification(EsClassification classification) {
+		this.classification = classification;
+	}
+
+	public EsClassification getClassification() {
+		return classification;
+	}
+
+	public void setSentiment(EsSentiment sentiment) {
+		this.sentiment = sentiment;
+	}
+
+	public EsSentiment getSentiment() {
+		return sentiment;
+	}
+
+	public String getInclusionTimeText() {
+		return inclusionTimeText;
+	}
+
+	public void setInclusionTimeText(String inclusionTimeText) {
+		this.inclusionTimeText = inclusionTimeText;
+	}
+
+	public String getReserveAtt1() {
+		return reserveAtt1;
+	}
+
+	public void setReserveAtt1(String reserveAtt1) {
+		this.reserveAtt1 = reserveAtt1;
+	}
+
+	public int getReserveAtt2() {
+		return reserveAtt2;
+	}
+
+	public void setReserveAtt2(int reserveAtt2) {
+		this.reserveAtt2 = reserveAtt2;
+	}
+
+	public String getTitleCN() {
+		return titleCN;
+	}
+
+	public void setTitleCN(String titleCN) {
+		this.titleCN = titleCN;
+	}
+
+	public String getContentCN() {
+		return contentCN;
+	}
+
+	public void setContentCN(String contentCN) {
+		this.contentCN = contentCN;
+	}
+
+	public Double[] getArticleVector() {
+		return articleVector;
+	}
+
+	public void setArticleVector(Double[] articleVector) {
+		this.articleVector = articleVector;
+	}
+
+	public String getAbstractEN() {
+		return abstractEN;
+	}
+
+	public void setAbstractEN(String abstractEN) {
+		this.abstractEN = abstractEN;
+	}
+
+	public String getAbstractCN() {
+		return abstractCN;
+	}
+
+	public void setAbstractCN(String abstractCN) {
+		this.abstractCN = abstractCN;
+	}
+
+	public List<HotWord> getWordSeqJson() {
+		return wordSeqJson;
+	}
+
+	public void setWordSeqJson(List<HotWord> wordSeqJson) {
+		this.wordSeqJson = wordSeqJson;
+	}
+
+	public NerListObj getNerList() {
+		return nerList;
+	}
+
+	public void setNerList(NerListObj nerList) {
+		this.nerList = nerList;
+	}
+
+	public int getIsKeyArticle() {
+		return isKeyArticle;
+	}
+
+	public void setIsKeyArticle(int isKeyArticle) {
+		this.isKeyArticle = isKeyArticle;
+	}
+
+	public String getUrl() {
+		return url;
+	}
+
+	public void setUrl(String url) {
+		this.url = url;
+	}
+
+	public Double getSearchScore() {
+		return searchScore;
+	}
+
+	public void setSearchScore(Double searchScore) {
+		this.searchScore = searchScore;
+	}
+}
