@@ -264,7 +264,11 @@ public class App2 {
 
         targetJson.put("inclusionTimeText", bean.getInclusionTimeText() != null ? bean.getInclusionTimeText() : "");
         targetJson.put("publishTimeText", bean.getPublishTimeText() != null ? bean.getPublishTimeText() : "");
-
+        targetJson.put("publisherId", bean.getPublisherId() != null ? bean.getPublisherId() : "");
+        targetJson.put("publisherCountry", bean.getPublisherCountry() != null ? bean.getPublisherCountry() : "");
+        targetJson.put("publisherType", bean.getPublisherType());
+        targetJson.put("reserveAtt1", bean.getReserveAtt1() != null ? bean.getReserveAtt1() : "");
+        targetJson.put("reserveAtt2", bean.getReserveAtt2() );
         // 5. 处理 classification (与Python逻辑完全一致)
         if (bean.getClassification() != null) {
             JSONObject classification = new JSONObject();
